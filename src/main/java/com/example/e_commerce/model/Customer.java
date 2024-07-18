@@ -5,13 +5,14 @@ import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 
-import javax.annotation.processing.Generated;
 import java.util.ArrayList;
 import java.util.List;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
+@Getter
+@Setter
 @Entity
 @Table(name = "customer")
 @FieldDefaults(level = AccessLevel.PRIVATE)
@@ -24,7 +25,7 @@ public class Customer {
     String emailId;
     int age;
     @Column(unique = true)
-    String mob;
+    String mobNo;
     String address;
     @OneToMany(mappedBy = "customer",cascade = CascadeType.ALL)
     List<Card> cards = new ArrayList<>();
