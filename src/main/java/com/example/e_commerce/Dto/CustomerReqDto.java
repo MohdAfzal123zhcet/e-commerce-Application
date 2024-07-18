@@ -12,8 +12,8 @@ import lombok.experimental.FieldDefaults;
 public class CustomerReqDto {
 
         String name;
-        String emailId;
+        String email;
         Integer age;
-        String mobNo;
+        String mob;
         String address;
 }

@@ -20,13 +20,19 @@ public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
      int id;
+
     String name;
+
     @Column(unique = true)
-    String emailId;
+    String email;
+
     int age;
+
     @Column(unique = true)
-    String mobNo;
+    String mob;
+
     String address;
+
     @OneToMany(mappedBy = "customer",cascade = CascadeType.ALL)
     List<Card> cards = new ArrayList<>();
 
