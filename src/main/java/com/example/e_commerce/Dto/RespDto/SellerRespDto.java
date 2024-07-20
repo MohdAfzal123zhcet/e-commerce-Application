@@ -1,17 +1,14 @@
-package com.example.e_commerce.Dto;
+package com.example.e_commerce.Dto.RespDto;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Data
-@Getter
-@Setter
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class CustomerRespDto {
-
-    String name;
+@Builder
+public class SellerRespDto {
+    String  name;
     String message;
-
 }

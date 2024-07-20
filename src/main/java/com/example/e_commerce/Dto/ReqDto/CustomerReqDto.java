@@ -1,4 +1,4 @@
-package com.example.e_commerce.Dto;
+package com.example.e_commerce.Dto.ReqDto;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
@@ -6,8 +6,6 @@ import lombok.experimental.FieldDefaults;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-@Getter
-@Setter
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class CustomerReqDto {
 

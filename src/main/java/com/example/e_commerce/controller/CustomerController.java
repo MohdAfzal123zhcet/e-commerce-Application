@@ -1,7 +1,7 @@
 package com.example.e_commerce.controller;
 
-import com.example.e_commerce.Dto.CustomerReqDto;
-import com.example.e_commerce.Dto.CustomerRespDto;
+import com.example.e_commerce.Dto.ReqDto.CustomerReqDto;
+import com.example.e_commerce.Dto.RespDto.CustomerRespDto;
 
 import com.example.e_commerce.Exception.CustomerException;
 import com.example.e_commerce.Service.ServiceInterfaceImplementation.CustomerServiceImplementation;
