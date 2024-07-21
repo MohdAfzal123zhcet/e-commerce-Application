@@ -23,11 +23,11 @@ public class CustomerController {
     {
           try {
               CustomerRespDto customerRespDto = customerServiceImplementation.addcustomer(customerReqDto);
-              return new ResponseEntity<>(customerRespDto,HttpStatus.CREATED);
+              return new ResponseEntity(customerRespDto,HttpStatus.CREATED);
           }
           catch(Exception e)
           {
-              return new ResponseEntity<>(e.getMessage(),HttpStatus.BAD_REQUEST);
+              return new ResponseEntity(e.getMessage(),HttpStatus.BAD_REQUEST);
           }
 
 
